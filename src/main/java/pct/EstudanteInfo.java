@@ -19,17 +19,17 @@ public class EstudanteInfo extends Estudante {
         
         if (infoBasico == 1 && logica == 'B')
         {
-        System.out.println("APROVADO COM UMA BOA NOTA!");    
+        System.out.println("NOTA......................: APROVADO COM UMA BOA NOTA!");    
         } else if (infoBasico == 1 && logica == 'R')
                 {
-                System.out.println("APROVADO COM NOTA REGULAR!");    
+                System.out.println("NOTA......................: APROVADO COM NOTA REGULAR!");    
                 }else if (infoBasico == 1 && logica == 'I')
                         {
-                        System.out.println("REPROVADO, COM NOTA INRREGULAR EM LÓGICA");        
+                        System.out.println("NOTA......................: REPROVADO, COM NOTA INRREGULAR EM LÓGICA");        
                         }
                         else 
                         {   
-                        System.out.println("REPROVADO, VOCÊ NÃO POSSUI INFORMATICA BASICA.");
+                        System.out.println("NOTA......................: REPROVADO, VOCÊ NÃO POSSUI INFORMATICA BASICA.");
                         }        
     }
     
@@ -69,14 +69,14 @@ public class EstudanteInfo extends Estudante {
     
     //Construtor vazio
     public EstudanteInfo() {
-    }
+        this.setNome("Nome não informados");
+    }  
 
+   //Consrutor com Override usando SUPER
     @Override
     public void EstudanteInfo() {
         super.EstudanteInfo(); //To change body of generated methods, choose Tools | Templates.
-        this.atribuirNota();
-        
-        
+        this.atribuirNota();        
     }
      
 }

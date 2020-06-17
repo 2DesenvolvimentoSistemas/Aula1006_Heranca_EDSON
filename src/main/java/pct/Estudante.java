@@ -16,8 +16,8 @@ public class Estudante {
     
     //Metodos
     public void EstudanteInfo(){
-        System.out.println("Nome do estudante.........:" + this.getNome());
-        System.out.println("ID do estudante...........:" + this.getId());
+        System.out.println("Nome do estudante.........: " + this.getNome());
+        System.out.println("ID do estudante...........: " + this.getId());
     }
 
     /**
@@ -47,22 +47,5 @@ public class Estudante {
     public void setId(int id) {
         this.id = id;
     }
-
-    //Construtor explicito
-    public Estudante(String nome, int id) {
-        this.nome = nome;
-        this.id = id;
-    }
-    
-    //Construtor implicito
-
-    public Estudante() {
-        this.setNome("Nome não informado");
-    }
-
-    void imprimirProduto() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-    
         
 }
